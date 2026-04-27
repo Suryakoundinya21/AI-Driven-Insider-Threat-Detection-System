@@ -1,0 +1,59 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath("."))
+
+import streamlit as st
+
+st.set_page_config(
+    page_title="Insider Threat Detection System",
+    page_icon="S",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# Dynamically import page modules from views/
+import importlib.util
+
+def load_page(path):
+    spec   = importlib.util.spec_from_file_location("page", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+
+PAGES = {
+    "Overview"           : os.path.join(BASE, "views", "overview.py"),
+    "Alert Center"       : os.path.join(BASE, "views", "alerts.py"),
+    "User Investigation" : os.path.join(BASE, "views", "users.py"),
+    "Explainability"     : os.path.join(BASE, "views", "explainability.py"),
+    "Model Report"       : os.path.join(BASE, "views", "model_report.py"),
+}
+
+with st.sidebar:
+    st.markdown("## Insider Threat Detection")
+    st.markdown("---")
+    selection = st.radio(
+        "Navigate to",
+        list(PAGES.keys()),
+        label_visibility="visible",
+    )
+    st.markdown("---")
+    st.markdown("**API Status**")
+    try:
+        import requests
+        r = requests.get("http://127.0.0.1:8000/health", timeout=3)
+        if r.status_code == 200:
+            st.success("API Online")
+        else:
+            st.error("API Error")
+    except Exception:
+        st.error("API Offline")
+        st.caption("Run: uvicorn src.api.main:app --reload --port 8000")
+
+page_path = PAGES[selection]
+if os.path.exists(page_path):
+    mod = load_page(page_path)
+    mod.show()
+else:
+    st.error(f"Page file not found: {page_path}")

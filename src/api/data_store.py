@@ -1,0 +1,55 @@
+import pandas as pd
+import json
+import logging
+from pathlib import Path
+from src.config import config
+from src.explainability.rule_explainer  import generate_reasons
+from src.explainability.alert_formatter import format_alert, get_risk_level
+
+logger = logging.getLogger(__name__)
+
+# Global state — loaded once at startup
+_df         = None
+_alert_df   = None
+_shap_imp   = None
+
+
+def load_data():
+    global _df, _alert_df, _shap_imp
+
+    logger.info("Loading ensemble dataset...")
+    _df = pd.read_parquet(
+        config.FEATURES_DIR / "feature_matrix_ensemble_scored.parquet"
+    )
+    _df["date_only"] = pd.to_datetime(_df["date_only"])
+    _df["reasons"]   = _df.apply(generate_reasons, axis=1)
+    logger.info(f"Dataset loaded: {_df.shape}")
+
+    logger.info("Loading alert table...")
+    alert_path = Path("reports/alerts/alert_table.csv")
+    if alert_path.exists():
+        _alert_df = pd.read_csv(alert_path)
+        logger.info(f"Alert table loaded: {len(_alert_df)} rows")
+    else:
+        logger.warning("Alert table not found — generating from dataset")
+        _alert_df = pd.DataFrame()
+
+    shap_path = config.MODELS_DIR / "isolation_forest" / "shap_importance.json"
+    if shap_path.exists():
+        with open(shap_path) as f:
+            _shap_imp = json.load(f)
+        logger.info("SHAP importance loaded")
+    else:
+        _shap_imp = {}
+
+
+def get_df() -> pd.DataFrame:
+    return _df
+
+
+def get_alert_df() -> pd.DataFrame:
+    return _alert_df
+
+
+def get_shap_importance() -> dict:
+    return _shap_imp or {}

@@ -1,0 +1,1723 @@
+[
+  {
+    "alert_id": "ALERT-GKO0078-20110322",
+    "user": "gko0078",
+    "date": "2011-03-22",
+    "risk_level": "CRITICAL",
+    "ensemble_score": 0.8726,
+    "ae_score": 1.0,
+    "if_score": 0.7452,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (8 events) is 4.1x above this user's normal (1.9 avg)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "94% of session activity occurred outside business hours (baseline: 11%)"
+      }
+    ],
+    "reason_summary": "USB/device activity (8 events) is 4.1x above this user's normal (1.9 avg); 94% of session activity occurred outside business hours (baseline: 11%)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (8 events) is 4.1x above this user's normal (1.9 avg)"
+      }
+    ],
+    "stats": {
+      "device_count": 8,
+      "email_to_external": 12,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.942,
+      "first_logon_hour": 7,
+      "total_events": 223
+    },
+    "generated_at": "2026-04-21T16:20:38.965756"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20110317",
+    "user": "dlm0051",
+    "date": "2011-03-17",
+    "risk_level": "CRITICAL",
+    "ensemble_score": 0.854,
+    "ae_score": 0.9158,
+    "if_score": 0.7922,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 47 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 47 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 1,
+      "http_suspicious": 47,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.203,
+      "first_logon_hour": 6,
+      "total_events": 256
+    },
+    "generated_at": "2026-04-21T16:20:38.965756"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20101022",
+    "user": "dlm0051",
+    "date": "2010-10-22",
+    "risk_level": "CRITICAL",
+    "ensemble_score": 0.8272,
+    "ae_score": 0.9292,
+    "if_score": 0.7253,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "51% of session activity occurred outside business hours (baseline: 14%)"
+      }
+    ],
+    "reason_summary": "51% of session activity occurred outside business hours (baseline: 14%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 10,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.512,
+      "first_logon_hour": 7,
+      "total_events": 248
+    },
+    "generated_at": "2026-04-21T16:20:38.965756"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100703",
+    "user": "dlm0051",
+    "date": "2010-07-03",
+    "risk_level": "CRITICAL",
+    "ensemble_score": 0.827,
+    "ae_score": 0.8339,
+    "if_score": 0.8201,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 39 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 39 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 17,
+      "email_to_external": 8,
+      "http_suspicious": 39,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.16,
+      "first_logon_hour": 6,
+      "total_events": 250
+    },
+    "generated_at": "2026-04-21T16:20:38.965756"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100527",
+    "user": "dlm0051",
+    "date": "2010-05-27",
+    "risk_level": "CRITICAL",
+    "ensemble_score": 0.8117,
+    "ae_score": 0.8638,
+    "if_score": 0.7596,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 18 suspicious URLs (job boards, cloud storage, competitor sites)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "47% of session activity occurred outside business hours (baseline: 16%)"
+      }
+    ],
+    "reason_summary": "Visited 18 suspicious URLs (job boards, cloud storage, competitor sites); 47% of session activity occurred outside business hours (baseline: 16%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 11,
+      "http_suspicious": 18,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.473,
+      "first_logon_hour": 7,
+      "total_events": 245
+    },
+    "generated_at": "2026-04-21T16:20:38.965756"
+  },
+  {
+    "alert_id": "ALERT-MPM0220-20100628",
+    "user": "mpm0220",
+    "date": "2010-06-28",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7956,
+    "ae_score": 0.6316,
+    "if_score": 0.9596,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 6 different machines in one day \u2014 possible lateral movement"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "66% of session activity occurred outside business hours (baseline: 17%)"
+      }
+    ],
+    "reason_summary": "Logged into 6 different machines in one day \u2014 possible lateral movement; 66% of session activity occurred outside business hours (baseline: 17%)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 6 different machines in one day \u2014 possible lateral movement"
+      }
+    ],
+    "stats": {
+      "device_count": 28,
+      "email_to_external": 8,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.655,
+      "first_logon_hour": 5,
+      "total_events": 200
+    },
+    "generated_at": "2026-04-21T16:20:38.965756"
+  },
+  {
+    "alert_id": "ALERT-HTH0007-20110301",
+    "user": "hth0007",
+    "date": "2011-03-01",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7834,
+    "ae_score": 0.7978,
+    "if_score": 0.7689,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "99% of session activity occurred outside business hours (baseline: 19%)"
+      }
+    ],
+    "reason_summary": "99% of session activity occurred outside business hours (baseline: 19%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 0,
+      "email_to_external": 22,
+      "http_suspicious": 1,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.994,
+      "first_logon_hour": 6,
+      "total_events": 315
+    },
+    "generated_at": "2026-04-21T16:20:38.965756"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20101220",
+    "user": "dlm0051",
+    "date": "2010-12-20",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7674,
+    "ae_score": 0.8263,
+    "if_score": 0.7086,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "50% of session activity occurred outside business hours (baseline: 15%)"
+      }
+    ],
+    "reason_summary": "50% of session activity occurred outside business hours (baseline: 15%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 9,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.502,
+      "first_logon_hour": 6,
+      "total_events": 249
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100304",
+    "user": "dlm0051",
+    "date": "2010-03-04",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7644,
+    "ae_score": 0.6059,
+    "if_score": 0.923,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 34 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Accessed 1 sensitive file(s) in HR, finance, or executive directories; Visited 34 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 4,
+      "http_suspicious": 34,
+      "sensitive_files": 1,
+      "after_hours_ratio": 0.271,
+      "first_logon_hour": 7,
+      "total_events": 255
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-BRM0995-20110419",
+    "user": "brm0995",
+    "date": "2011-04-19",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7587,
+    "ae_score": 0.8178,
+    "if_score": 0.6997,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "47% of session activity occurred outside business hours (baseline: 30%)"
+      }
+    ],
+    "reason_summary": "47% of session activity occurred outside business hours (baseline: 30%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 3,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.47,
+      "first_logon_hour": 9,
+      "total_events": 132
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-BRM0995-20100217",
+    "user": "brm0995",
+    "date": "2010-02-17",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7497,
+    "ae_score": 0.8412,
+    "if_score": 0.6582,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "45% of session activity occurred outside business hours (baseline: 28%)"
+      }
+    ],
+    "reason_summary": "45% of session activity occurred outside business hours (baseline: 28%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 9,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.446,
+      "first_logon_hour": 9,
+      "total_events": 130
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-PPF0435-20110204",
+    "user": "ppf0435",
+    "date": "2011-02-04",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7335,
+    "ae_score": 0.8373,
+    "if_score": 0.6296,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (18 events) is 15.9x above this user's normal (1.1 avg)"
+      }
+    ],
+    "reason_summary": "USB/device activity (18 events) is 15.9x above this user's normal (1.1 avg)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (18 events) is 15.9x above this user's normal (1.1 avg)"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 0,
+      "http_suspicious": 2,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.336,
+      "first_logon_hour": 7,
+      "total_events": 122
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-AIB0948-20101221",
+    "user": "aib0948",
+    "date": "2010-12-21",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7329,
+    "ae_score": 0.7104,
+    "if_score": 0.7553,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "72% of session activity occurred outside business hours (baseline: 11%)"
+      }
+    ],
+    "reason_summary": "72% of session activity occurred outside business hours (baseline: 11%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 0,
+      "http_suspicious": 1,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.721,
+      "first_logon_hour": 7,
+      "total_events": 43
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-BRM0995-20110502",
+    "user": "brm0995",
+    "date": "2011-05-02",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.732,
+    "ae_score": 0.8565,
+    "if_score": 0.6075,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [],
+    "reason_summary": "",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 1,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.366,
+      "first_logon_hour": 9,
+      "total_events": 131
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-BRM0995-20100122",
+    "user": "brm0995",
+    "date": "2010-01-22",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7303,
+    "ae_score": 0.753,
+    "if_score": 0.7077,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "54% of session activity occurred outside business hours (baseline: 27%)"
+      }
+    ],
+    "reason_summary": "54% of session activity occurred outside business hours (baseline: 27%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 4,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.538,
+      "first_logon_hour": 9,
+      "total_events": 132
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-VTT0385-20100414",
+    "user": "vtt0385",
+    "date": "2010-04-14",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7256,
+    "ae_score": 0.9285,
+    "if_score": 0.5227,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [],
+    "reason_summary": "",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 7,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.248,
+      "first_logon_hour": 7,
+      "total_events": 125
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-BRM0995-20110208",
+    "user": "brm0995",
+    "date": "2011-02-08",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7232,
+    "ae_score": 0.9401,
+    "if_score": 0.5064,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [],
+    "reason_summary": "",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 3,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.269,
+      "first_logon_hour": 9,
+      "total_events": 130
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20110429",
+    "user": "dlm0051",
+    "date": "2011-04-29",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7171,
+    "ae_score": 0.5573,
+    "if_score": 0.8768,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 29 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 29 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 13,
+      "http_suspicious": 29,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.309,
+      "first_logon_hour": 7,
+      "total_events": 256
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-MCF0600-20100920",
+    "user": "mcf0600",
+    "date": "2010-09-20",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7164,
+    "ae_score": 0.5384,
+    "if_score": 0.8943,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "81% of session activity occurred outside business hours (baseline: 16%)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "first_logon_hour",
+        "reason": "Login at hour 1:00 deviates 7.0 hours from personal baseline (8.0h avg)"
+      }
+    ],
+    "reason_summary": "81% of session activity occurred outside business hours (baseline: 16%); Login at hour 1:00 deviates 7.0 hours from personal baseline (8.0h avg)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 20,
+      "email_to_external": 1,
+      "http_suspicious": 1,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.806,
+      "first_logon_hour": 1,
+      "total_events": 67
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-PPF0435-20110202",
+    "user": "ppf0435",
+    "date": "2011-02-02",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7163,
+    "ae_score": 0.8588,
+    "if_score": 0.5737,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (18 events) is 33.8x above this user's normal (0.5 avg)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 9 suspicious URLs (job boards, cloud storage, competitor sites)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "40% of session activity occurred outside business hours (baseline: 2%)"
+      }
+    ],
+    "reason_summary": "USB/device activity (18 events) is 33.8x above this user's normal (0.5 avg); Visited 9 suspicious URLs (job boards, cloud storage, competitor sites); 40% of session activity occurred outside business hours (baseline: 2%)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (18 events) is 33.8x above this user's normal (0.5 avg)"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 1,
+      "http_suspicious": 9,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.405,
+      "first_logon_hour": 7,
+      "total_events": 126
+    },
+    "generated_at": "2026-04-21T16:20:38.967009"
+  },
+  {
+    "alert_id": "ALERT-HRL0540-20110408",
+    "user": "hrl0540",
+    "date": "2011-04-08",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7156,
+    "ae_score": 0.6144,
+    "if_score": 0.8168,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 4 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Accessed 1 sensitive file(s) in HR, finance, or executive directories; Visited 4 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 5,
+      "http_suspicious": 4,
+      "sensitive_files": 1,
+      "after_hours_ratio": 0.366,
+      "first_logon_hour": 9,
+      "total_events": 142
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-RSC0089-20100408",
+    "user": "rsc0089",
+    "date": "2010-04-08",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7151,
+    "ae_score": 0.6978,
+    "if_score": 0.7324,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 3 different machines in one day \u2014 possible lateral movement"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 4 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Logged into 3 different machines in one day \u2014 possible lateral movement; Visited 4 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 3 different machines in one day \u2014 possible lateral movement"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 6,
+      "http_suspicious": 4,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.312,
+      "first_logon_hour": 7,
+      "total_events": 128
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-MPM0220-20100318",
+    "user": "mpm0220",
+    "date": "2010-03-18",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7059,
+    "ae_score": 0.4797,
+    "if_score": 0.932,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 6 different machines in one day \u2014 possible lateral movement"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "43% of session activity occurred outside business hours (baseline: 19%)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "first_logon_hour",
+        "reason": "Login at hour 7:00 deviates 3.6 hours from personal baseline (3.4h avg)"
+      }
+    ],
+    "reason_summary": "Logged into 6 different machines in one day \u2014 possible lateral movement; 43% of session activity occurred outside business hours (baseline: 19%); Login at hour 7:00 deviates 3.6 hours from personal baseline (3.4h avg)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 6 different machines in one day \u2014 possible lateral movement"
+      }
+    ],
+    "stats": {
+      "device_count": 28,
+      "email_to_external": 1,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.434,
+      "first_logon_hour": 7,
+      "total_events": 189
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-HRL0540-20100803",
+    "user": "hrl0540",
+    "date": "2010-08-03",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.7028,
+    "ae_score": 0.7629,
+    "if_score": 0.6426,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [],
+    "reason_summary": "",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 6,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.303,
+      "first_logon_hour": 9,
+      "total_events": 132
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-MPM0220-20100804",
+    "user": "mpm0220",
+    "date": "2010-08-04",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6852,
+    "ae_score": 0.4311,
+    "if_score": 0.9393,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 5 different machines in one day \u2014 possible lateral movement"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "48% of session activity occurred outside business hours (baseline: 19%)"
+      }
+    ],
+    "reason_summary": "Logged into 5 different machines in one day \u2014 possible lateral movement; 48% of session activity occurred outside business hours (baseline: 19%)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 5 different machines in one day \u2014 possible lateral movement"
+      }
+    ],
+    "stats": {
+      "device_count": 25,
+      "email_to_external": 11,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.475,
+      "first_logon_hour": 1,
+      "total_events": 200
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-EHB0824-20100720",
+    "user": "ehb0824",
+    "date": "2010-07-20",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6808,
+    "ae_score": 0.617,
+    "if_score": 0.7446,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "83% of session activity occurred outside business hours (baseline: 26%)"
+      }
+    ],
+    "reason_summary": "83% of session activity occurred outside business hours (baseline: 26%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 0,
+      "http_suspicious": 1,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.826,
+      "first_logon_hour": 8,
+      "total_events": 46
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-KKW0879-20100907",
+    "user": "kkw0879",
+    "date": "2010-09-07",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6761,
+    "ae_score": 0.6273,
+    "if_score": 0.7248,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "58% of session activity occurred outside business hours (baseline: 5%)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "first_logon_hour",
+        "reason": "Login at hour 1:00 deviates 5.8 hours from personal baseline (6.8h avg)"
+      }
+    ],
+    "reason_summary": "58% of session activity occurred outside business hours (baseline: 5%); Login at hour 1:00 deviates 5.8 hours from personal baseline (6.8h avg)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 11,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.582,
+      "first_logon_hour": 1,
+      "total_events": 201
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100903",
+    "user": "dlm0051",
+    "date": "2010-09-03",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6751,
+    "ae_score": 0.4724,
+    "if_score": 0.8778,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 30 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 30 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 9,
+      "http_suspicious": 30,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.227,
+      "first_logon_hour": 6,
+      "total_events": 255
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-AIB0948-20110125",
+    "user": "aib0948",
+    "date": "2011-01-25",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6725,
+    "ae_score": 0.5884,
+    "if_score": 0.7566,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 3 different machines in one day \u2014 possible lateral movement"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "72% of session activity occurred outside business hours (baseline: 14%)"
+      }
+    ],
+    "reason_summary": "Logged into 3 different machines in one day \u2014 possible lateral movement; 72% of session activity occurred outside business hours (baseline: 14%)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 3 different machines in one day \u2014 possible lateral movement"
+      }
+    ],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 0,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.718,
+      "first_logon_hour": 7,
+      "total_events": 39
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-HRL0540-20100621",
+    "user": "hrl0540",
+    "date": "2010-06-21",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6715,
+    "ae_score": 0.5912,
+    "if_score": 0.7519,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "51% of session activity occurred outside business hours (baseline: 28%)"
+      }
+    ],
+    "reason_summary": "51% of session activity occurred outside business hours (baseline: 28%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 7,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.507,
+      "first_logon_hour": 9,
+      "total_events": 138
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20110114",
+    "user": "dlm0051",
+    "date": "2011-01-14",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.662,
+    "ae_score": 0.4453,
+    "if_score": 0.8788,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 26 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 26 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 3,
+      "http_suspicious": 26,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.379,
+      "first_logon_hour": 7,
+      "total_events": 256
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100916",
+    "user": "dlm0051",
+    "date": "2010-09-16",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6596,
+    "ae_score": 0.5013,
+    "if_score": 0.8179,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 26 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 26 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 9,
+      "http_suspicious": 26,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.399,
+      "first_logon_hour": 7,
+      "total_events": 253
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100908",
+    "user": "dlm0051",
+    "date": "2010-09-08",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6565,
+    "ae_score": 0.465,
+    "if_score": 0.848,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 31 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 31 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 4,
+      "http_suspicious": 31,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.245,
+      "first_logon_hour": 6,
+      "total_events": 253
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-JDF0593-20100510",
+    "user": "jdf0593",
+    "date": "2010-05-10",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6541,
+    "ae_score": 0.6653,
+    "if_score": 0.6428,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "60% of session activity occurred outside business hours (baseline: 14%)"
+      }
+    ],
+    "reason_summary": "60% of session activity occurred outside business hours (baseline: 14%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 0,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.6,
+      "first_logon_hour": 8,
+      "total_events": 35
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20101103",
+    "user": "dlm0051",
+    "date": "2010-11-03",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6515,
+    "ae_score": 0.5714,
+    "if_score": 0.7315,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "47% of session activity occurred outside business hours (baseline: 15%)"
+      }
+    ],
+    "reason_summary": "47% of session activity occurred outside business hours (baseline: 15%)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 4,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.473,
+      "first_logon_hour": 7,
+      "total_events": 237
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100405",
+    "user": "dlm0051",
+    "date": "2010-04-05",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6496,
+    "ae_score": 0.4964,
+    "if_score": 0.8028,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 33 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 33 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 4,
+      "http_suspicious": 33,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.206,
+      "first_logon_hour": 6,
+      "total_events": 253
+    },
+    "generated_at": "2026-04-21T16:20:38.968148"
+  },
+  {
+    "alert_id": "ALERT-LBH0942-20100116",
+    "user": "lbh0942",
+    "date": "2010-01-16",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6476,
+    "ae_score": 0.4952,
+    "if_score": 0.8001,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 29 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 29 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 2,
+      "http_suspicious": 29,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.393,
+      "first_logon_hour": 7,
+      "total_events": 150
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100126",
+    "user": "dlm0051",
+    "date": "2010-01-26",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6461,
+    "ae_score": 0.3622,
+    "if_score": 0.93,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 24 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Accessed 1 sensitive file(s) in HR, finance, or executive directories; Visited 24 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 15,
+      "http_suspicious": 24,
+      "sensitive_files": 1,
+      "after_hours_ratio": 0.274,
+      "first_logon_hour": 7,
+      "total_events": 252
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100214",
+    "user": "dlm0051",
+    "date": "2010-02-14",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6461,
+    "ae_score": 0.4413,
+    "if_score": 0.8509,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 32 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 32 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 11,
+      "http_suspicious": 32,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.142,
+      "first_logon_hour": 6,
+      "total_events": 254
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-MPM0220-20100505",
+    "user": "mpm0220",
+    "date": "2010-05-05",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6436,
+    "ae_score": 0.3423,
+    "if_score": 0.9448,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 5 different machines in one day \u2014 possible lateral movement"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "42% of session activity occurred outside business hours (baseline: 20%)"
+      }
+    ],
+    "reason_summary": "Logged into 5 different machines in one day \u2014 possible lateral movement; 42% of session activity occurred outside business hours (baseline: 20%)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 5 different machines in one day \u2014 possible lateral movement"
+      }
+    ],
+    "stats": {
+      "device_count": 24,
+      "email_to_external": 6,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.422,
+      "first_logon_hour": 0,
+      "total_events": 199
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100528",
+    "user": "dlm0051",
+    "date": "2010-05-28",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6429,
+    "ae_score": 0.4582,
+    "if_score": 0.8276,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 32 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 32 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 14,
+      "email_to_external": 2,
+      "http_suspicious": 32,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.229,
+      "first_logon_hour": 7,
+      "total_events": 249
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-BRM0995-20110314",
+    "user": "brm0995",
+    "date": "2011-03-14",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6408,
+    "ae_score": 0.7265,
+    "if_score": 0.5551,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [],
+    "reason_summary": "",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 6,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.312,
+      "first_logon_hour": 9,
+      "total_events": 128
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20110406",
+    "user": "dlm0051",
+    "date": "2011-04-06",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6386,
+    "ae_score": 0.3756,
+    "if_score": 0.9016,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 24 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Accessed 1 sensitive file(s) in HR, finance, or executive directories; Visited 24 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "sensitive_file_count",
+        "reason": "Accessed 1 sensitive file(s) in HR, finance, or executive directories"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 9,
+      "http_suspicious": 24,
+      "sensitive_files": 1,
+      "after_hours_ratio": 0.19,
+      "first_logon_hour": 7,
+      "total_events": 252
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100603",
+    "user": "dlm0051",
+    "date": "2010-06-03",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6384,
+    "ae_score": 0.3942,
+    "if_score": 0.8825,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 23 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 23 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 7,
+      "http_suspicious": 23,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.269,
+      "first_logon_hour": 7,
+      "total_events": 253
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-MCF0600-20100929",
+    "user": "mcf0600",
+    "date": "2010-09-29",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6382,
+    "ae_score": 0.4545,
+    "if_score": 0.822,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (18 events) is 10.0x above this user's normal (1.8 avg)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "83% of session activity occurred outside business hours (baseline: 27%)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "first_logon_hour",
+        "reason": "Login at hour 3:00 deviates 3.7 hours from personal baseline (6.7h avg)"
+      }
+    ],
+    "reason_summary": "USB/device activity (18 events) is 10.0x above this user's normal (1.8 avg); 83% of session activity occurred outside business hours (baseline: 27%); Login at hour 3:00 deviates 3.7 hours from personal baseline (6.7h avg)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (18 events) is 10.0x above this user's normal (1.8 avg)"
+      }
+    ],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 1,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.831,
+      "first_logon_hour": 3,
+      "total_events": 59
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-GTD0219-20100223",
+    "user": "gtd0219",
+    "date": "2010-02-23",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6328,
+    "ae_score": 0.3228,
+    "if_score": 0.9427,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 7 different machines in one day \u2014 possible lateral movement"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "after_hours_ratio",
+        "reason": "77% of session activity occurred outside business hours (baseline: 17%)"
+      }
+    ],
+    "reason_summary": "Logged into 7 different machines in one day \u2014 possible lateral movement; 77% of session activity occurred outside business hours (baseline: 17%)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "unique_pcs",
+        "reason": "Logged into 7 different machines in one day \u2014 possible lateral movement"
+      }
+    ],
+    "stats": {
+      "device_count": 10,
+      "email_to_external": 8,
+      "http_suspicious": 0,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.774,
+      "first_logon_hour": 4,
+      "total_events": 168
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100616",
+    "user": "dlm0051",
+    "date": "2010-06-16",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6312,
+    "ae_score": 0.4699,
+    "if_score": 0.7924,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 38 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 38 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 5,
+      "http_suspicious": 38,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.163,
+      "first_logon_hour": 6,
+      "total_events": 251
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-FTM0406-20101201",
+    "user": "ftm0406",
+    "date": "2010-12-01",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.63,
+    "ae_score": 0.5427,
+    "if_score": 0.7174,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (16 events) is 26.7x above this user's normal (0.6 avg)"
+      },
+      {
+        "severity": "MEDIUM",
+        "feature": "first_logon_hour",
+        "reason": "Login at hour 0:00 deviates 7.2 hours from personal baseline (7.2h avg)"
+      }
+    ],
+    "reason_summary": "USB/device activity (16 events) is 26.7x above this user's normal (0.6 avg); Login at hour 0:00 deviates 7.2 hours from personal baseline (7.2h avg)",
+    "high_reasons": [
+      {
+        "severity": "HIGH",
+        "feature": "device_count",
+        "reason": "USB/device activity (16 events) is 26.7x above this user's normal (0.6 avg)"
+      }
+    ],
+    "stats": {
+      "device_count": 16,
+      "email_to_external": 0,
+      "http_suspicious": 2,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.239,
+      "first_logon_hour": 0,
+      "total_events": 134
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100609",
+    "user": "dlm0051",
+    "date": "2010-06-09",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6297,
+    "ae_score": 0.3913,
+    "if_score": 0.8681,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 28 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 28 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 10,
+      "http_suspicious": 28,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.18,
+      "first_logon_hour": 6,
+      "total_events": 256
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  },
+  {
+    "alert_id": "ALERT-DLM0051-20100118",
+    "user": "dlm0051",
+    "date": "2010-01-18",
+    "risk_level": "HIGH",
+    "ensemble_score": 0.6274,
+    "ae_score": 0.4246,
+    "if_score": 0.8301,
+    "ae_flagged": true,
+    "if_flagged": true,
+    "both_flagged": true,
+    "reasons": [
+      {
+        "severity": "MEDIUM",
+        "feature": "http_suspicious",
+        "reason": "Visited 11 suspicious URLs (job boards, cloud storage, competitor sites)"
+      }
+    ],
+    "reason_summary": "Visited 11 suspicious URLs (job boards, cloud storage, competitor sites)",
+    "high_reasons": [],
+    "stats": {
+      "device_count": 18,
+      "email_to_external": 14,
+      "http_suspicious": 11,
+      "sensitive_files": 0,
+      "after_hours_ratio": 0.259,
+      "first_logon_hour": 6,
+      "total_events": 255
+    },
+    "generated_at": "2026-04-21T16:20:38.969152"
+  }
+]
