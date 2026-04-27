@@ -1,17 +1,53 @@
+# Virtual environments
 venv/
 .venv/
 env/
-data/raw/*.csv
-data/processed/*.parquet
-data/features/*.parquet
-models/autoencoder/best_model.pt
-models/autoencoder/scaler.pkl
-models/isolation_forest/if_model.pkl
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
-.ipynb_checkpoints/
-*.log
+
+# System files
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit secrets
 .streamlit/secrets.toml
+
+# -------------------------
+# IGNORE LARGE DATA FILES
+# -------------------------
+data/raw/*.csv
+data/processed/*.parquet
+
+# Ignore ALL features first
+data/features/*
+
+# Then allow ONLY required ones
+!data/features/
+!data/features/feature_matrix_ensemble_scored.parquet
+
+# -------------------------
+# MODELS
+# -------------------------
+models/autoencoder/*
+!models/autoencoder/
+# (Do NOT upload .pt if large)
+
+models/isolation_forest/*
+!models/isolation_forest/
+!models/isolation_forest/shap_importance.json
+
+# -------------------------
+# REPORTS
+# -------------------------
+reports/*
+!reports/alerts/
+!reports/alerts/alert_table.csv
