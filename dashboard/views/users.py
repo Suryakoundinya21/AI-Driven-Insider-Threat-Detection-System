@@ -6,7 +6,6 @@ import plotly.graph_objects as go
 import requests
 from config import API_BASE
 
-r = requests.get(f"{API_BASE}/users/top-risk")
 T   = 15
 RC  = {"CRITICAL":"#D85A30","HIGH":"#E8953A","MEDIUM":"#F5C842","LOW":"#1D9E75"}
 

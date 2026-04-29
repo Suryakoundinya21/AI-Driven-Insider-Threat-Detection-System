@@ -5,17 +5,17 @@ import pandas as pd
 import plotly.graph_objects as go
 import requests
 from config import API_BASE
-r = requests.get(f"{API_BASE}/stats/model-comparison")
+
 T   = 15
 
 def show():
     st.title("Model Performance Report")
 
-    try: ov = requests.get(f"{API}/stats/overview", timeout=T).json()
+    try: ov = requests.get(f"{API_BASE}/stats/overview", timeout=T).json()
     except: ov = {}
 
     try:
-        mc     = requests.get(f"{API}/stats/model-comparison", timeout=T).json()
+        mc     = requests.get(f"{API_BASE}/stats/model-comparison", timeout=T).json()
         models = mc.get("models",[])
     except: models = []
 

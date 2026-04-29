@@ -7,7 +7,7 @@ import requests
 
 from config import API_BASE
 
-r = requests.get(f"{API_BASE}/stats/overview")
+
 T     = 15
 RC    = {"CRITICAL":"#D85A30","HIGH":"#E8953A","MEDIUM":"#F5C842","LOW":"#1D9E75"}
 
