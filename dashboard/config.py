@@ -1,4 +1,4 @@
-API_BASE = "http://127.0.0.1:8000"
+API_BASE = "https://ai-driven-insider-threat-detection-system.onrender.com"
 APP_TITLE = "Insider Threat Detection System"
 
 RISK_COLORS = {
