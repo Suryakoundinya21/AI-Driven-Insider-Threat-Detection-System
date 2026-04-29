@@ -40,16 +40,20 @@ with st.sidebar:
     )
     st.markdown("---")
     st.markdown("**API Status**")
+    import requests
+    from config import API_BASE
+
     try:
-        import requests
-        r = requests.get("http://127.0.0.1:8000/health", timeout=3)
+        r = requests.get(f"{API_BASE}/health", timeout=5)
+    
         if r.status_code == 200:
             st.success("API Online")
         else:
             st.error("API Error")
+
     except Exception:
         st.error("API Offline")
-        st.caption("Run: uvicorn src.api.main:app --reload --port 8000")
+        st.caption(f"API URL: {API_BASE}")
 
 page_path = PAGES[selection]
 if os.path.exists(page_path):
