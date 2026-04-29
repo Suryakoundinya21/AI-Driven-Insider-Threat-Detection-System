@@ -52,7 +52,7 @@ def show():
         st.markdown("---")
         st.subheader(f"Activity Timeline - {sel}")
         try:
-            td = requests.get(f"{API}/users/{sel}/timeline",
+            td = requests.get(f"{API_BASE}/users/{sel}/timeline",
                               params={"days":500}, timeout=T).json()
         except:
             st.error("Could not load timeline.")
