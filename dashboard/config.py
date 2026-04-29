@@ -1,4 +1,8 @@
-API_BASE = "https://ai-driven-insider-threat-detection-system.onrender.com"
+import os
+API_BASE = os.getenv(
+    "API_BASE",
+    "http://127.0.0.1:8000"   
+)
 APP_TITLE = "Insider Threat Detection System"
 
 RISK_COLORS = {
