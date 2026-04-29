@@ -5,23 +5,25 @@ import plotly.graph_objects as go
 import pandas as pd
 import requests
 
-API   = "http://127.0.0.1:8000"
+from config import API_BASE
+
+r = requests.get(f"{API_BASE}/stats/overview")
 T     = 15
 RC    = {"CRITICAL":"#D85A30","HIGH":"#E8953A","MEDIUM":"#F5C842","LOW":"#1D9E75"}
 
 @st.cache_data(ttl=60)
 def _overview():
-    try: return requests.get(f"{API}/stats/overview", timeout=T).json()
+    try: return requests.get(f"{API_BASE}/stats/overview", timeout=T).json()
     except: return {}
 
 @st.cache_data(ttl=60)
 def _counts():
-    try: return requests.get(f"{API}/alerts/count", timeout=T).json()
+    try: return requests.get(f"{API_BASE}/alerts/count", timeout=T).json()
     except: return {}
 
 @st.cache_data(ttl=60)
 def _top_users(n=10):
-    try: return requests.get(f"{API}/users/top-risk", params={"limit":n}, timeout=T).json()
+    try: return requests.get(f"{API_BASE}/users/top-risk", params={"limit":n}, timeout=T).json()
     except: return []
 
 def show():

@@ -4,8 +4,9 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import requests
+from config import API_BASE
 
-API = "http://127.0.0.1:8000"
+r = requests.get(f"{API_BASE}/stats/shap-importance")
 T   = 15
 RC  = {"CRITICAL":"#D85A30","HIGH":"#E8953A","MEDIUM":"#F5C842","LOW":"#1D9E75"}
 
@@ -16,7 +17,7 @@ def show():
     with tab1:
         st.subheader("Global SHAP Feature Importance")
         try:
-            data = requests.get(f"{API}/stats/shap-importance", timeout=T).json()
+            data = requests.get(f"{API_BASE}/stats/shap-importance", timeout=T).json()
             feats = data.get("features",[])
         except: feats = []
 
@@ -38,7 +39,7 @@ def show():
 
     with tab2:
         st.subheader("Alert-Level Explanation")
-        try: alerts = requests.get(f"{API}/alerts/", params={"limit":50}, timeout=T).json()
+        try: alerts = requests.get(f"{API_BASE}/alerts/", params={"limit":50}, timeout=T).json()
         except: alerts = []
 
         if not alerts:
@@ -50,7 +51,7 @@ def show():
         label = st.selectbox("Select Alert", list(opts.keys()))
         aid   = opts[label]
 
-        try: det = requests.get(f"{API}/alerts/{aid}", timeout=T).json()
+        try: det = requests.get(f"{API_BASE}/alerts/{aid}", timeout=T).json()
         except: det = {}
 
         if not det or "alert_id" not in det:

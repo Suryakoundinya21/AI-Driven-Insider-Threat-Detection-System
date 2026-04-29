@@ -4,8 +4,9 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import requests
+from config import API_BASE
 
-API = "http://127.0.0.1:8000"
+r = requests.get(f"{API_BASE}/alerts/")
 T   = 15
 RC  = {"CRITICAL":"#D85A30","HIGH":"#E8953A","MEDIUM":"#F5C842","LOW":"#1D9E75"}
 RB  = {"CRITICAL":"#FAECE7","HIGH":"#FEF3E2","MEDIUM":"#FEFBE6","LOW":"#E8F8F2"}
@@ -13,7 +14,7 @@ RB  = {"CRITICAL":"#FAECE7","HIGH":"#FEF3E2","MEDIUM":"#FEFBE6","LOW":"#E8F8F2"}
 def show():
     st.title("Alert Center")
 
-    try: counts = requests.get(f"{API}/alerts/count", timeout=T).json()
+    try: counts = requests.get(f"{API_BASE}/alerts/count", timeout=T).json()
     except: counts = {}
 
     col1, col2, col3 = st.columns(3)
@@ -30,7 +31,7 @@ def show():
     if user_input.strip():
         params["user"] = user_input.strip().lower()
 
-    try: alerts = requests.get(f"{API}/alerts/", params=params, timeout=T).json()
+    try: alerts = requests.get(f"{API_BASE}/alerts/", params=params, timeout=T).json()
     except: alerts = []
 
     if not alerts:

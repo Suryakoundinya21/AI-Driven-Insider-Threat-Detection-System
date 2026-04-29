@@ -4,8 +4,8 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import requests
-
-API = "http://127.0.0.1:8000"
+from config import API_BASE
+r = requests.get(f"{API_BASE}/stats/model-comparison")
 T   = 15
 
 def show():

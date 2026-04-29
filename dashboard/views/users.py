@@ -4,15 +4,16 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import requests
+from config import API_BASE
 
-API = "http://127.0.0.1:8000"
+r = requests.get(f"{API_BASE}/users/top-risk")
 T   = 15
 RC  = {"CRITICAL":"#D85A30","HIGH":"#E8953A","MEDIUM":"#F5C842","LOW":"#1D9E75"}
 
 def show():
     st.title("User Investigation")
 
-    try: top = requests.get(f"{API}/users/top-risk", params={"limit":20}, timeout=T).json()
+    try: top = requests.get(f"{API_BASE}/users/top-risk", params={"limit":20}, timeout=T).json()
     except:
         st.error("Cannot reach API.")
         return
@@ -29,7 +30,7 @@ def show():
 
     with col2:
         if sel:
-            try: s = requests.get(f"{API}/users/{sel}/summary", timeout=T).json()
+            try: s = requests.get(f"{API_BASE}/users/{sel}/summary", timeout=T).json()
             except: s = {}
             if s and "error" not in s:
                 risk  = s.get("risk_level","LOW")
