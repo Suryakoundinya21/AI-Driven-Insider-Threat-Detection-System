@@ -1,0 +1,41 @@
+{
+  "total_sessions": 330452,
+  "total_users": 1000,
+  "ae_anomalies": 4755,
+  "if_anomalies": 17816,
+  "ensemble_union": 19308,
+  "ensemble_intersect": 3263,
+  "ae_anomaly_pct": 1.44,
+  "if_anomaly_pct": 5.39,
+  "date_range": {
+    "from": "2010-01-02",
+    "to": "2011-05-17"
+  },
+  "top_risk_users": [
+    {
+      "user": "gko0078",
+      "max_score": 0.8726,
+      "risk_level": "CRITICAL"
+    },
+    {
+      "user": "dlm0051",
+      "max_score": 0.854,
+      "risk_level": "CRITICAL"
+    },
+    {
+      "user": "mpm0220",
+      "max_score": 0.7956,
+      "risk_level": "HIGH"
+    },
+    {
+      "user": "hth0007",
+      "max_score": 0.7834,
+      "risk_level": "HIGH"
+    },
+    {
+      "user": "brm0995",
+      "max_score": 0.7587,
+      "risk_level": "HIGH"
+    }
+  ]
+}
