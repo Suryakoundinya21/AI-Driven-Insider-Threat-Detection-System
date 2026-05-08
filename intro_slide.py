@@ -1,0 +1,51 @@
+import os
+
+html = """\
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background: #0E1117;
+    color: #FAFAFA;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h1 { color: #378ADD; font-size: 2.5em; text-align: center; margin-bottom: 10px; }
+  h2 { color: #D85A30; font-size: 1.4em; font-weight: normal; margin: 5px 0; }
+  .divider { width: 600px; height: 2px; background: #378ADD; margin: 20px 0; }
+  .stat { display: flex; gap: 40px; margin-top: 20px; }
+  .box { text-align: center; }
+  .num { font-size: 2em; color: #1D9E75; font-weight: bold; }
+  .lbl { font-size: 0.85em; color: #888; margin-top: 4px; }
+  .urls { margin-top: 30px; font-size: 0.9em; color: #aaa; text-align: center; }
+  .url { color: #378ADD; margin: 4px 0; }
+</style>
+</head>
+<body>
+  <h1>AI-Driven Insider Threat Detection System</h1>
+  <h2>Explainable Multimodal Behavioral Anomaly Detection</h2>
+  <div class="divider"></div>
+  <div class="stat">
+    <div class="box"><div class="num">330,452</div><div class="lbl">Sessions Analyzed</div></div>
+    <div class="box"><div class="num">1,000</div><div class="lbl">Users Monitored</div></div>
+    <div class="box"><div class="num">0.8311</div><div class="lbl">Best ROC-AUC</div></div>
+    <div class="box"><div class="num">3,263</div><div class="lbl">High-Confidence Alerts</div></div>
+  </div>
+  <div class="urls">
+    <div>Dataset: CERT Insider Threat Dataset v6.2</div>
+    <div>Tech Stack: PyTorch | scikit-learn | FastAPI | Streamlit | SHAP</div>
+    <div class="url">API: ai-driven-insider-threat-detection-system.onrender.com</div>
+    <div class="url">Dashboard: ai-driven-insider-threat-detection-system-wesxb3dpmfgtmsqlxsr3.streamlit.app</div>
+  </div>
+</body>
+</html>
+"""
+with open("demo_intro.html", "w", encoding="utf-8") as f:
+    f.write(html)
+print("Open demo_intro.html in browser for intro slide")
