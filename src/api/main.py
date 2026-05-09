@@ -3,10 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 import logging
 
-from src.api.data_store    import load_data, get_df, get_alert_df
-from src.api.routes_alerts import router as alerts_router
-from src.api.routes_users  import router as users_router
-from src.api.routes_stats  import router as stats_router
+from src.api.data_store     import load_data, get_df, get_alert_df
+from src.api.routes_alerts  import router as alerts_router
+from src.api.routes_users   import router as users_router
+from src.api.routes_stats   import router as stats_router
+from src.api.routes_feedback import router as feedback_router
 
 logging.basicConfig(
     level=logging.INFO,
@@ -17,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("Starting up — loading data...")
+    logger.info("Starting up - loading data...")
     load_data()
     logger.info("Data loaded. API ready.")
     yield
@@ -27,7 +28,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title       = "Insider Threat Detection API",
     description = "AI-powered insider threat detection with explainable alerts",
-    version     = "1.0.0",
+    version     = "2.0.0",
     lifespan    = lifespan,
 )
 
@@ -42,6 +43,7 @@ app.add_middleware(
 app.include_router(alerts_router)
 app.include_router(users_router)
 app.include_router(stats_router)
+app.include_router(feedback_router)
 
 
 @app.get("/", tags=["Health"])
@@ -51,16 +53,15 @@ def root():
     return {
         "status"         : "running",
         "service"        : "Insider Threat Detection API",
-        "version"        : "1.0.0",
+        "version"        : "2.0.0",
         "total_sessions" : len(df) if df is not None else 0,
         "total_alerts"   : len(alert_df) if alert_df is not None else 0,
-        "model_loaded"   : df is not None,
         "endpoints"      : {
-            "alerts"     : "/alerts",
-            "users"      : "/users/top-risk",
-            "stats"      : "/stats/overview",
-            "shap"       : "/stats/shap-importance",
-            "docs"       : "/docs",
+            "alerts"   : "/alerts/",
+            "users"    : "/users/top-risk",
+            "stats"    : "/stats/overview",
+            "feedback" : "/feedback/stats",
+            "docs"     : "/docs",
         }
     }
 
