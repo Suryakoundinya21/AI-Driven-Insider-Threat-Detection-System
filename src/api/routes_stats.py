@@ -1,6 +1,9 @@
 from fastapi import APIRouter
-from src.api.data_store  import get_df, get_alert_df, get_shap_importance
+import pandas as pd
+import os
+from src.api.data_store import get_df, get_alert_df, get_shap_importance
 from src.explainability.alert_formatter import get_risk_level
+from src.config import config
 
 router = APIRouter(prefix="/stats", tags=["Statistics"])
 
@@ -19,7 +22,6 @@ def get_overview():
         .sort_values(ascending=False)
         .head(5)
         .reset_index()
-        .rename(columns={"ensemble_score": "max_score"})
     )
 
     return {
@@ -35,14 +37,14 @@ def get_overview():
         "critical_alerts"    : int((alert_df["ensemble_score"] >= 0.8).sum())
                                if alert_df is not None and len(alert_df) > 0 else 0,
         "date_range"         : {
-            "from" : str(df["date_only"].min())[:10],
-            "to"   : str(df["date_only"].max())[:10],
+            "from": str(df["date_only"].min())[:10],
+            "to"  : str(df["date_only"].max())[:10],
         },
-        "top_risk_users"     : [
+        "top_risk_users": [
             {
                 "user"      : row["user"],
-                "max_score" : round(float(row["max_score"]), 4),
-                "risk_level": get_risk_level(float(row["max_score"])),
+                "max_score" : round(float(row["ensemble_score"]), 4),
+                "risk_level": get_risk_level(float(row["ensemble_score"])),
             }
             for _, row in top_users.iterrows()
         ],
@@ -51,7 +53,9 @@ def get_overview():
 
 @router.get("/shap-importance")
 def get_shap_importance_endpoint():
-    imp = get_shap_importance()
+    imp    = get_shap_importance()
+    if not imp:
+        return {"features": [], "error": "SHAP data not loaded"}
     ranked = sorted(imp.items(), key=lambda x: x[1], reverse=True)
     return {
         "features": [
@@ -63,10 +67,10 @@ def get_shap_importance_endpoint():
 
 @router.get("/model-comparison")
 def get_model_comparison():
-    import os
-    import pandas as pd
-    path = "reports/model_comparison.csv"
-    if not os.path.exists(path):
-        return {"error": "model_comparison.csv not found"}
-    df = pd.read_csv(path)
-    return {"models": df.to_dict(orient="records")}
+    # Try v2 first (includes LSTM), fallback to v1
+    for fname in ["model_comparison_v2.csv", "model_comparison.csv"]:
+        path = config.REPORTS_DIR / fname
+        if path.exists():
+            df = pd.read_csv(path)
+            return {"models": df.fillna(0).to_dict(orient="records")}
+    return {"error": "model_comparison.csv not found", "models": []}
