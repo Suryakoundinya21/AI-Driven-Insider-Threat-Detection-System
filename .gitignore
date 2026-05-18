@@ -51,3 +51,9 @@ models/isolation_forest/*
 reports/*
 !reports/alerts/
 !reports/alerts/alert_table.csv
+# Temporary fix scripts
+fix_*.py
+create_*.py
+check_*.py
+demo_intro.html
+insider_threat_detection_submission.zip
